@@ -4,14 +4,9 @@
 <p> The challenge consisted of replicating the static jpg design using CSS and HTML. By the end of the challenge, the user should be able to view the optimal layout for the component depending on their device's screen size and see the hover state on desktop for the Sign Up button.
 
 <h2>Outcome</h2>
-<img src="desktop-solution.png">
+<img src="solution-desktop.png">
 <img src="mobile-solution.png">
 
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -31,22 +26,9 @@
 <p>Applying the border-radius to the .first-section solved the rounded border problem! I think I know why it didn't work: the .first-section sits <em>on top of</em> the .container, so the border <em>was</em> rounded, I just couldn't see it. I'm packing it for today and work on mobile responsiveness tomorrow.</p>
 <h3>20oct2021 10:30</h3>
 <p> While making the page resposive for mobile, I encountered a problem which I can't seem to find a solution! The .second-section doesn't align with the first one when squeezed into a small screen. At this point, I keep thinking will only be able to solve it with grid, for a have tried a couple of diferent css properties and nothing seems to work.</p>
-<p><img src="align-problem1.jpg"></p>
+<p><img src="alignproblem1.png"></p>
 <h3> 21oct2021 10:40</h3>
 <p> I gave up last night an started again this morning. I fixed my issue applying the flex property to the mobile version and using grid for the desktop version.</p>
-```
-@media only screen and (max-width:375px) {
-    .third-section {
-        border-radius: 0 0 20px 20px !important;
-            }
-    .second-section {
-        border-radius: 0 0 0 0;
-    }
-    .container-grid {
-        display:flex;
-        flex-direction: column;
-    }
-    ```
 
 <p>My lastest issue is that, when in mobile,  I don't have margin at the bottom of the container. Can't seem to fix it. Applying the max-height property and using a value of 100% fixes the top margin, but not the bottom.</p>
 
